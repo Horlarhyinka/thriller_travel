@@ -1,12 +1,8 @@
 import { Injectable, NestMiddleware } from "@nestjs/common";
-import { InjectModel } from "@nestjs/mongoose";
 import { Request, Response } from "express";
 import * as jwt from "jsonwebtoken"
-import { Model } from "mongoose";
 import { appConfig } from "src/config/config";
-import { User } from "src/schemas/user.schema";
 import { Roles } from "src/util/enums";
-import { UserModel } from "src/schemas/user.schema";
 import { UserService } from "src/user/user.service";
 
 @Injectable()
